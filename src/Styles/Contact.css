@@ -1,0 +1,171 @@
+ #contact {
+  padding: 5px 0;
+} 
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-mf {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.title-box-2 {
+  text-align: center;
+
+}
+
+.title-left {
+  font-size: 2rem;
+  position: relative;
+}
+
+.title-left:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: rgb(0,0,255);
+  width: 100px;
+  bottom: -12px;
+}
+
+
+.contactForm {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form_control1 {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  outline: none;
+}
+
+.form_control1:focus {
+  border-bottom: 2px solid rgb(0,0,255);
+}
+
+textarea.form_control1 {
+  resize: vertical;
+}
+
+.button {
+  background-color: #0000FF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0000FF;
+}
+
+.button:focus {
+  outline: none; /* Remove the focus border when the button is focused */
+}
+
+.footer_copy {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bold;
+
+}
+
+.copyright-box {
+  font-size: 14px;
+}
+
+/* @media (max-width: 768px) {
+  .contact-mf {
+    padding: 20px;
+  }
+} */
+
+/* //////  Icon */
+.socialMedia {
+  position: fixed;
+  width: 45px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  right: 30px;
+  bottom: 140px;
+  transition: background 0.5s;
+
+}
+
+.socialMedia svg {
+  color: #0000FF;
+  margin: 20px;
+  font-size: 38px;
+  cursor: pointer;
+
+}
+
+.success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  background-color: #51e774;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  z-index: 9999;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.social-media-icon .hover-name {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.social-media-icon .active {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .contact-mf {
+    padding: 30px;
+  }
+
+  .footer_copy {
+    margin-top: 40px;
+  }
+}
+
+.footer-paralax {
+  padding: 4rem 0 0 0;
+}
+
+.contact-mf {
+  margin-top: 4rem;
+}

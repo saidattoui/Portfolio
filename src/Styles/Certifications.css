@@ -1,0 +1,92 @@
+ .work {
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .container_cert {
+   position: relative;
+   margin: auto 80px;
+ }
+
+ .work-box {
+   margin-bottom: 3rem;
+   margin-top: 20px;
+   background-color: #fff;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+   place-items: center;
+   box-shadow: none;
+ }
+
+ .certItem {
+   display: flex;
+   flex-direction: column;
+   border-radius: 15px;
+   width: 100%;
+   height: 350px;
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+   overflow: hidden;
+   cursor: pointer;
+ }
+
+ .certItem:hover {
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.8);
+ }
+
+ .certItem .certImage {
+   flex: 1;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   border-radius: 15px 15px 0 0;
+   transition: transform 0.3s ease-in;
+ }
+
+ .certItem:hover .certImage {
+   transform: scale(1.05);
+ }
+
+ .certItem h1 {
+   padding: 10px;
+   text-align: center;
+   font-size: 1.2rem;
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+ .certLink {
+   text-align: center;
+   text-decoration: none;
+   color: #007bff;
+   padding: 10px;
+   border-top: 1px solid #ccc;
+   background-color: #f8f9fa;
+   transition: background-color 0.3s;
+ }
+
+ .certItem:hover .certLink {
+   background-color: #dfe3e6;
+ }
+
+ @media (max-width: 768px) {
+   .container_cert {
+     margin: auto 20px;
+   }
+
+   .work-box {
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 10px;
+   }
+
+   .certItem {
+     height: auto;
+   }
+
+   .certItem .certImage {
+     border-radius: 15px;
+   }
+ }
